@@ -133,6 +133,7 @@ private:
 				v[i][j] = T / B;
 //				cout << v[i][j] << ", ";
 			}
+//			cout << endl;
 		}
 	}
 
@@ -266,12 +267,14 @@ int main() {
 	             {8000.000,  15200.000, 5,  3500.000},
 	             {14260.000, 19640.000, 15, 4023.000}};
 
-	FCMClustering m1(data1_x(), 5, 2, pow(10, -5), 100, data1_u());
+//	FCMClustering m1(data1_x(), 5, 2, pow(10, -5), 100, data1_u());
 //	FCMClustering m1(dataBreastCancer_x, 2, 2, .000001, 500);
 //	FCMClustering m1(dataPublicClustering_x(), 30, 2, .000000001, 2000);
 //	FCMClustering m1(dataWaterPotability(), 2, 2, .0000001, 1000);
 //	FCMClustering m1(dataBQuery_c9a_x(), 10, 2, .0000000000001, 6000);
 //	FCMClustering m1(dataBQuery_c7a_x(), 10, 2, .0000000000001, 5000);
+//	FCMClustering m1(dataFinal_x(), 6, 2, 0.000001, 1000, dataFinal_u());
+	FCMClustering m1(dataFinal_x(), 6, 2, 0.000001, 1000, dataFinal_u());
 
 //	FMatrix clustersCenter = m1.getClustersCenter();
 	m1.printClustersCenter();

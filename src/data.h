@@ -18,7 +18,9 @@ FMatrix data1_x(), data1_u(),
 		dataSemiBig1_x(),
 		dataIris_x(),
 		dataBreastCancer_x(),
-		dataWaterPotability();
+		dataWaterPotability(),
+		dataFinal_x(), dataFinal_u(),
+		dataFinal100_x();
 
 
 #endif //SYSTEM_DATA_H
